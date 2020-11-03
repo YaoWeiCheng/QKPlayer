@@ -10,18 +10,18 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
     var window: UIWindow?
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-//        exceptionLogWithData()
+        //        exceptionLogWithData()
         return true
     }
-
-
+    
+    
     func exceptionLogWithData() {
-//        CDUncaughtExceptionHandle.shared.setDefaultHandler()
+        //        CDUncaughtExceptionHandle.shared.setDefaultHandler()
         
         setDefaultHandler()
         
@@ -53,11 +53,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let path = documentpath.appending("Exception.txt")
             print(url)
             do{
-//                try url.write(toFile: path, atomically: true, encoding: String.Encoding.utf8)
+                //                try url.write(toFile: path, atomically: true, encoding: String.Encoding.utf8)
             }catch let e {
                 print(e.localizedDescription)
             }
         }
-      }
+    }
 }
 

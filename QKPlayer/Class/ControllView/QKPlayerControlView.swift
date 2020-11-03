@@ -213,6 +213,7 @@ class QKPlayerControlView: UIView {
     
     // MARK: - 全屏模式
     func showFullScreenModel(fullScreenModel: QKFullScreenMode) {
+        cancelAutoFadeOutControlView()
         self.resetControlView()
         self.layoutIfNeeded()
         self.setNeedsDisplay()
@@ -308,6 +309,7 @@ extension QKPlayerControlView: QKPlayerMediaControl {
                 self.prepareShowLoading {
                 self.activityView.startAnimating()
             }
+            print("loadState: \(String(describing: playerControl.currentPlayerManager?.loadState)) prepareShowLoading: \(self.prepareShowLoading)")
         } else if state == .paused {
             self.portraitControlView.playBtnSelectedState(selected: false)
             self.portraitControlView.playBtnSelectedState(selected: false)

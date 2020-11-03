@@ -350,10 +350,6 @@ extension QKAVPlayerManager {
         let interval = CMTimeMakeWithSeconds(self.timerRefreshInterVal, preferredTimescale: Int32(NSEC_PER_SEC))
         timerObserver = self.player?.addPeriodicTimeObserver(forInterval: interval, queue: DispatchQueue.main, using: { [weak self](time) in
             guard let `self` = self else { return }
-//            if self.isPlaying == true && self.loadState == QKPlayerLoadState.stalled {
-//
-////                self.player?.rate = self.rate ?? self.rateSpeed
-//            }
             let loadeRanges = self.playerItem?.seekableTimeRanges ?? []
             if loadeRanges.count > 0, let playerPlayTimeChange = self.playerPlayTimeChange { // 播放时间改变
                 playerPlayTimeChange(self, self.currentTime ?? 0, self.totalTime ?? 0)
@@ -421,7 +417,6 @@ extension QKAVPlayerManager {
             } else if keyPath == kPlaybackLikelyToKeepUp {
                 // 当缓冲OK时
                 if self.playerItem?.isPlaybackLikelyToKeepUp == true {
-                    print("缓冲OK了")
                     self.loadState = .playable
                     self.isBuffering = false
                     if self.isPlaying == true {
@@ -446,10 +441,8 @@ extension QKAVPlayerManager {
         
     // MARK: - 缓冲差时调用这里
     func bufferingSomeSecond() {
-        print("1: \(self.isBuffering)")
         // playbackBufferEmpty会反复进入，因此在bufferingOneSecond延时播放执行完之前再调用bufferingSomeSecond都忽略
         if self.isBuffering || self.playState == QKPlayerPlaybackState.playStopped { return }
-        print("2: \(self.isBuffering)")
         // 没有网络也需要判断
         if QKReachabilityManager.shareManager.status == .notReachable { return }
         
@@ -457,24 +450,7 @@ extension QKAVPlayerManager {
         
         // 需要暂停一下才播放，因为网络不好的情况下，时间在走，声音却播放不出来，效果特别差
         self.player?.pause()
-//        self.player?.rate = 0
-    
-        
-//        self.self.playerItem?.loadedTimeRanges
-        
-//        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-//            // 如果此时用户已经暂停了，则不需要开启播放了
-//            if self.isPlaying == false || self.loadState == QKPlayerLoadState.stalled {
-//                self.isBuffering = false
-//                return
-//            }
-//            self.play() // 播放
-//            self.isBuffering = false
-//            // 如果执行了play还是没有播放说明缓存还没好，则再次缓存一段时间
-//            if self.playerItem?.isPlaybackBufferEmpty == false {
-//                self.bufferingSomeSecond() // 再次缓存
-//            }
-//        }
+
     }
     
     // MARk: - 计算缓冲进度

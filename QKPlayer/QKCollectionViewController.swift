@@ -87,7 +87,7 @@ class QKCollectionViewController: UIViewController {
 }
 
 
-extension QKCollectionViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension QKCollectionViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         return urlsArray.count
@@ -112,13 +112,24 @@ extension QKCollectionViewController: UICollectionViewDelegate, UICollectionView
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         scrollView.qk_scrollViewDidEndDecelerating()
     }
+    
     func scrollViewDidScrollToTop(_ scrollView: UIScrollView) {
         scrollView.qk_scrollViewDidScrollToTop()
     }
+    
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         scrollView.qk_scrollViewDidScroll()
     }
+    
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         scrollView.qk_scrollViewWillBeginDragging()
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return CGFloat.zero
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return CGFloat.zero
     }
 }
