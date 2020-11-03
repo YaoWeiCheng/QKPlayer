@@ -31,10 +31,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let crushStr = String.init(data: data! as Data, encoding: String.Encoding.utf8)
             print(crushStr!)
         }
-        //测试数据
-        let arry:NSArray = ["1"]
-
-        print("%@",arry[5])
     }
     
     public func getdataPath() -> String{

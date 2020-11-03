@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1611B0D124ED12D600E38195 /* QKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1611B0D024ED12D600E38195 /* QKViewController.swift */; };
 		2294BA758CED098E72367421 /* Pods_QKPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B34EFDD2728AAFEBEF69F37 /* Pods_QKPlayer.framework */; };
 		28E52124B7BA1C8674D17976 /* Pods_QKPlayer_QKPlayerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FAC90BFE38A02B826FA9B6A /* Pods_QKPlayer_QKPlayerUITests.framework */; };
 		E266B77324EA85F600C2430D /* QKPlayerController+ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E266B77224EA85F500C2430D /* QKPlayerController+ScrollView.swift */; };
@@ -74,7 +73,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1611B0D024ED12D600E38195 /* QKViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKViewController.swift; sourceTree = "<group>"; };
 		1B34EFDD2728AAFEBEF69F37 /* Pods_QKPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QKPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FAC90BFE38A02B826FA9B6A /* Pods_QKPlayer_QKPlayerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QKPlayer_QKPlayerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		51BD93DFFE074428EA3E667F /* Pods-QKPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QKPlayer.release.xcconfig"; path = "Target Support Files/Pods-QKPlayer/Pods-QKPlayer.release.xcconfig"; sourceTree = "<group>"; };
@@ -186,6 +184,18 @@
 			path = cell;
 			sourceTree = "<group>";
 		};
+		E279FE22255133E6003EDC09 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				E290515D24DD324600D7FAE1 /* Resources */,
+				E290515224DBADDD00D7FAE1 /* ControllView */,
+				E290515124DBADD900D7FAE1 /* Controller */,
+				E290514A24DBAC1600D7FAE1 /* AVPlayer */,
+				E266B77824EBB14A00C2430D /* cell */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
 		E290511C24DBAA6100D7FAE1 = {
 			isa = PBXGroup;
 			children = (
@@ -209,16 +219,11 @@
 		E290512724DBAA6100D7FAE1 /* QKPlayer */ = {
 			isa = PBXGroup;
 			children = (
-				E290515D24DD324600D7FAE1 /* Resources */,
-				E290515224DBADDD00D7FAE1 /* ControllView */,
-				E290515124DBADD900D7FAE1 /* Controller */,
-				E290514A24DBAC1600D7FAE1 /* AVPlayer */,
+				E279FE22255133E6003EDC09 /* Class */,
 				E290512824DBAA6100D7FAE1 /* AppDelegate.swift */,
-				E266B77824EBB14A00C2430D /* cell */,
 				E290512C24DBAA6100D7FAE1 /* ViewController.swift */,
 				E266B77424EB725300C2430D /* QKCollectionViewController.swift */,
 				E266B77624EB725E00C2430D /* QKNormalViewController.swift */,
-				1611B0D024ED12D600E38195 /* QKViewController.swift */,
 				E290512E24DBAA6100D7FAE1 /* Main.storyboard */,
 				E290513124DBAA6300D7FAE1 /* Assets.xcassets */,
 				E290513324DBAA6300D7FAE1 /* LaunchScreen.storyboard */,
@@ -499,7 +504,6 @@
 				E290515824DBD32D00D7FAE1 /* QKPlayerPresentView.swift in Sources */,
 				E290517E24DD34BE00D7FAE1 /* QKCustomPortraitControlView.swift in Sources */,
 				E290518824DD4DAE00D7FAE1 /* QKPlayer.swift in Sources */,
-				1611B0D124ED12D600E38195 /* QKViewController.swift in Sources */,
 				E290519224DE99A100D7FAE1 /* QKSpeedLoadingView.swift in Sources */,
 				E290515424DBAE1B00D7FAE1 /* QKPlayerMediaPlayback.swift in Sources */,
 				E290518424DD408F00D7FAE1 /* QKCustomLandScapeControlView.swift in Sources */,
