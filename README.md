@@ -8,9 +8,8 @@ iOS播放器
 
 ### 用法：
 
-普通：
+普通用法：
 
-`
 
     class QKNormalViewController: UIViewController {
 
@@ -77,5 +76,5 @@ iOS播放器
          }
     }
 
-`
+
 
