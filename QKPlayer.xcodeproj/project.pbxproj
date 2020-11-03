@@ -1,0 +1,783 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1611B0D124ED12D600E38195 /* QKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1611B0D024ED12D600E38195 /* QKViewController.swift */; };
+		2294BA758CED098E72367421 /* Pods_QKPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B34EFDD2728AAFEBEF69F37 /* Pods_QKPlayer.framework */; };
+		28E52124B7BA1C8674D17976 /* Pods_QKPlayer_QKPlayerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FAC90BFE38A02B826FA9B6A /* Pods_QKPlayer_QKPlayerUITests.framework */; };
+		E266B77324EA85F600C2430D /* QKPlayerController+ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E266B77224EA85F500C2430D /* QKPlayerController+ScrollView.swift */; };
+		E266B77524EB725300C2430D /* QKCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E266B77424EB725300C2430D /* QKCollectionViewController.swift */; };
+		E266B77724EB725E00C2430D /* QKNormalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E266B77624EB725E00C2430D /* QKNormalViewController.swift */; };
+		E266B77A24EBB15E00C2430D /* QKListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E266B77924EBB15E00C2430D /* QKListCollectionViewCell.swift */; };
+		E266B77C24EE521000C2430D /* QKPlayerNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = E266B77B24EE521000C2430D /* QKPlayerNotification.swift */; };
+		E266B77E24EE63A600C2430D /* QKListPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E266B77D24EE63A600C2430D /* QKListPlayerController.swift */; };
+		E266B78024EE63C700C2430D /* QKListPortraitControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E266B77F24EE63C700C2430D /* QKListPortraitControllerView.swift */; };
+		E287772424E0DA7C0012CF2E /* UIScrollView+QKPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E287772324E0DA7C0012CF2E /* UIScrollView+QKPlayer.swift */; };
+		E287772624E0E0C20012CF2E /* QKPlayerMediaControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E287772524E0E0C20012CF2E /* QKPlayerMediaControl.swift */; };
+		E287772824E121490012CF2E /* QKUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E287772724E121490012CF2E /* QKUtils.swift */; };
+		E287772A24E249DF0012CF2E /* QKOrientationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = E287772924E249DF0012CF2E /* QKOrientationObserver.swift */; };
+		E287772E24E385400012CF2E /* QKPlayerGestureControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E287772D24E385400012CF2E /* QKPlayerGestureControl.swift */; };
+		E287773024E51C4A0012CF2E /* QKVolumeBrightnessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E287772F24E51C4A0012CF2E /* QKVolumeBrightnessView.swift */; };
+		E287773224E6671D0012CF2E /* QKPlayerController+OrientationRotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E287773124E6671D0012CF2E /* QKPlayerController+OrientationRotation.swift */; };
+		E290512924DBAA6100D7FAE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E290512824DBAA6100D7FAE1 /* AppDelegate.swift */; };
+		E290512D24DBAA6100D7FAE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E290512C24DBAA6100D7FAE1 /* ViewController.swift */; };
+		E290513024DBAA6100D7FAE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E290512E24DBAA6100D7FAE1 /* Main.storyboard */; };
+		E290513224DBAA6300D7FAE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E290513124DBAA6300D7FAE1 /* Assets.xcassets */; };
+		E290513524DBAA6300D7FAE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E290513324DBAA6300D7FAE1 /* LaunchScreen.storyboard */; };
+		E290514024DBAA6300D7FAE1 /* QKPlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E290513F24DBAA6300D7FAE1 /* QKPlayerUITests.swift */; };
+		E290515024DBACF200D7FAE1 /* QKAVPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E290514F24DBACF200D7FAE1 /* QKAVPlayerManager.swift */; };
+		E290515424DBAE1B00D7FAE1 /* QKPlayerMediaPlayback.swift in Sources */ = {isa = PBXBuildFile; fileRef = E290515324DBAE1B00D7FAE1 /* QKPlayerMediaPlayback.swift */; };
+		E290515624DBAF9B00D7FAE1 /* QKPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E290515524DBAF9B00D7FAE1 /* QKPlayerView.swift */; };
+		E290515824DBD32D00D7FAE1 /* QKPlayerPresentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E290515724DBD32D00D7FAE1 /* QKPlayerPresentView.swift */; };
+		E290515A24DBE97E00D7FAE1 /* QKObserverControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E290515924DBE97E00D7FAE1 /* QKObserverControl.swift */; };
+		E290515C24DD2A0200D7FAE1 /* QKReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E290515B24DD2A0200D7FAE1 /* QKReachabilityManager.swift */; };
+		E290515F24DD328200D7FAE1 /* QKPlayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E290515E24DD328200D7FAE1 /* QKPlayer.bundle */; };
+		E290516F24DD346800D7FAE1 /* icon_pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E290516124DD346800D7FAE1 /* icon_pause@2x.png */; };
+		E290517024DD346800D7FAE1 /* icon_adun@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E290516224DD346800D7FAE1 /* icon_adun@2x.png */; };
+		E290517124DD346800D7FAE1 /* icon_adun@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E290516324DD346800D7FAE1 /* icon_adun@3x.png */; };
+		E290517224DD346800D7FAE1 /* icon_pause@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E290516424DD346800D7FAE1 /* icon_pause@3x.png */; };
+		E290517324DD346800D7FAE1 /* icon_small_play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E290516524DD346800D7FAE1 /* icon_small_play@2x.png */; };
+		E290517424DD346800D7FAE1 /* icon_small_play@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E290516624DD346800D7FAE1 /* icon_small_play@3x.png */; };
+		E290517524DD346800D7FAE1 /* icon_sq@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E290516724DD346800D7FAE1 /* icon_sq@2x.png */; };
+		E290517624DD346800D7FAE1 /* icon_ad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E290516824DD346800D7FAE1 /* icon_ad@2x.png */; };
+		E290517724DD346800D7FAE1 /* icon_ad@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E290516924DD346800D7FAE1 /* icon_ad@3x.png */; };
+		E290517824DD346800D7FAE1 /* icon_sq@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E290516A24DD346800D7FAE1 /* icon_sq@3x.png */; };
+		E290517924DD346800D7FAE1 /* icon_big_play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E290516B24DD346800D7FAE1 /* icon_big_play@2x.png */; };
+		E290517A24DD346800D7FAE1 /* icon_progress@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E290516C24DD346800D7FAE1 /* icon_progress@3x.png */; };
+		E290517B24DD346800D7FAE1 /* icon_progress@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E290516D24DD346800D7FAE1 /* icon_progress@2x.png */; };
+		E290517C24DD346800D7FAE1 /* icon_big_play@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E290516E24DD346800D7FAE1 /* icon_big_play@3x.png */; };
+		E290517E24DD34BE00D7FAE1 /* QKCustomPortraitControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E290517D24DD34BE00D7FAE1 /* QKCustomPortraitControlView.swift */; };
+		E290518024DD380800D7FAE1 /* QKSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E290517F24DD380800D7FAE1 /* QKSliderView.swift */; };
+		E290518224DD384C00D7FAE1 /* QKPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E290518124DD384C00D7FAE1 /* QKPlayerController.swift */; };
+		E290518424DD408F00D7FAE1 /* QKCustomLandScapeControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E290518324DD408F00D7FAE1 /* QKCustomLandScapeControlView.swift */; };
+		E290518824DD4DAE00D7FAE1 /* QKPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E290518724DD4DAE00D7FAE1 /* QKPlayer.swift */; };
+		E290518B24DD54B700D7FAE1 /* icon_full@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E290518924DD54B700D7FAE1 /* icon_full@2x.png */; };
+		E290518C24DD54B700D7FAE1 /* icon_full@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E290518A24DD54B700D7FAE1 /* icon_full@3x.png */; };
+		E290518E24DE956200D7FAE1 /* QKPlayerControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E290518D24DE956200D7FAE1 /* QKPlayerControlView.swift */; };
+		E290519024DE999400D7FAE1 /* QKLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E290518F24DE999400D7FAE1 /* QKLoadingView.swift */; };
+		E290519224DE99A100D7FAE1 /* QKSpeedLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E290519124DE99A100D7FAE1 /* QKSpeedLoadingView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E290513C24DBAA6300D7FAE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E290511D24DBAA6100D7FAE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E290512424DBAA6100D7FAE1;
+			remoteInfo = QKPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1611B0D024ED12D600E38195 /* QKViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKViewController.swift; sourceTree = "<group>"; };
+		1B34EFDD2728AAFEBEF69F37 /* Pods_QKPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QKPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FAC90BFE38A02B826FA9B6A /* Pods_QKPlayer_QKPlayerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QKPlayer_QKPlayerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51BD93DFFE074428EA3E667F /* Pods-QKPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QKPlayer.release.xcconfig"; path = "Target Support Files/Pods-QKPlayer/Pods-QKPlayer.release.xcconfig"; sourceTree = "<group>"; };
+		53FF814A7A1B57C12799597C /* Pods-QKPlayer-QKPlayerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QKPlayer-QKPlayerUITests.release.xcconfig"; path = "Target Support Files/Pods-QKPlayer-QKPlayerUITests/Pods-QKPlayer-QKPlayerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		74BF7E6919AE597EFAD3E252 /* Pods-QKPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QKPlayer.debug.xcconfig"; path = "Target Support Files/Pods-QKPlayer/Pods-QKPlayer.debug.xcconfig"; sourceTree = "<group>"; };
+		9098ADFF359FCBDE1DD5DFE3 /* Pods-QKPlayer-QKPlayerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QKPlayer-QKPlayerUITests.debug.xcconfig"; path = "Target Support Files/Pods-QKPlayer-QKPlayerUITests/Pods-QKPlayer-QKPlayerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E266B77224EA85F500C2430D /* QKPlayerController+ScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QKPlayerController+ScrollView.swift"; sourceTree = "<group>"; };
+		E266B77424EB725300C2430D /* QKCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKCollectionViewController.swift; sourceTree = "<group>"; };
+		E266B77624EB725E00C2430D /* QKNormalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKNormalViewController.swift; sourceTree = "<group>"; };
+		E266B77924EBB15E00C2430D /* QKListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKListCollectionViewCell.swift; sourceTree = "<group>"; };
+		E266B77B24EE521000C2430D /* QKPlayerNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKPlayerNotification.swift; sourceTree = "<group>"; };
+		E266B77D24EE63A600C2430D /* QKListPlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKListPlayerController.swift; sourceTree = "<group>"; };
+		E266B77F24EE63C700C2430D /* QKListPortraitControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKListPortraitControllerView.swift; sourceTree = "<group>"; };
+		E287772324E0DA7C0012CF2E /* UIScrollView+QKPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+QKPlayer.swift"; sourceTree = "<group>"; };
+		E287772524E0E0C20012CF2E /* QKPlayerMediaControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKPlayerMediaControl.swift; sourceTree = "<group>"; };
+		E287772724E121490012CF2E /* QKUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKUtils.swift; sourceTree = "<group>"; };
+		E287772924E249DF0012CF2E /* QKOrientationObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKOrientationObserver.swift; sourceTree = "<group>"; };
+		E287772D24E385400012CF2E /* QKPlayerGestureControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKPlayerGestureControl.swift; sourceTree = "<group>"; };
+		E287772F24E51C4A0012CF2E /* QKVolumeBrightnessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKVolumeBrightnessView.swift; sourceTree = "<group>"; };
+		E287773124E6671D0012CF2E /* QKPlayerController+OrientationRotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QKPlayerController+OrientationRotation.swift"; sourceTree = "<group>"; };
+		E290512524DBAA6100D7FAE1 /* QKPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QKPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E290512824DBAA6100D7FAE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E290512C24DBAA6100D7FAE1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E290512F24DBAA6100D7FAE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E290513124DBAA6300D7FAE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E290513424DBAA6300D7FAE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E290513624DBAA6300D7FAE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E290513B24DBAA6300D7FAE1 /* QKPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QKPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E290513F24DBAA6300D7FAE1 /* QKPlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKPlayerUITests.swift; sourceTree = "<group>"; };
+		E290514124DBAA6300D7FAE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E290514F24DBACF200D7FAE1 /* QKAVPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKAVPlayerManager.swift; sourceTree = "<group>"; };
+		E290515324DBAE1B00D7FAE1 /* QKPlayerMediaPlayback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKPlayerMediaPlayback.swift; sourceTree = "<group>"; };
+		E290515524DBAF9B00D7FAE1 /* QKPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKPlayerView.swift; sourceTree = "<group>"; };
+		E290515724DBD32D00D7FAE1 /* QKPlayerPresentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKPlayerPresentView.swift; sourceTree = "<group>"; };
+		E290515924DBE97E00D7FAE1 /* QKObserverControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKObserverControl.swift; sourceTree = "<group>"; };
+		E290515B24DD2A0200D7FAE1 /* QKReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKReachabilityManager.swift; sourceTree = "<group>"; };
+		E290515E24DD328200D7FAE1 /* QKPlayer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = QKPlayer.bundle; sourceTree = "<group>"; };
+		E290516124DD346800D7FAE1 /* icon_pause@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_pause@2x.png"; sourceTree = "<group>"; };
+		E290516224DD346800D7FAE1 /* icon_adun@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_adun@2x.png"; sourceTree = "<group>"; };
+		E290516324DD346800D7FAE1 /* icon_adun@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_adun@3x.png"; sourceTree = "<group>"; };
+		E290516424DD346800D7FAE1 /* icon_pause@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_pause@3x.png"; sourceTree = "<group>"; };
+		E290516524DD346800D7FAE1 /* icon_small_play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_small_play@2x.png"; sourceTree = "<group>"; };
+		E290516624DD346800D7FAE1 /* icon_small_play@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_small_play@3x.png"; sourceTree = "<group>"; };
+		E290516724DD346800D7FAE1 /* icon_sq@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_sq@2x.png"; sourceTree = "<group>"; };
+		E290516824DD346800D7FAE1 /* icon_ad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_ad@2x.png"; sourceTree = "<group>"; };
+		E290516924DD346800D7FAE1 /* icon_ad@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_ad@3x.png"; sourceTree = "<group>"; };
+		E290516A24DD346800D7FAE1 /* icon_sq@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_sq@3x.png"; sourceTree = "<group>"; };
+		E290516B24DD346800D7FAE1 /* icon_big_play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_big_play@2x.png"; sourceTree = "<group>"; };
+		E290516C24DD346800D7FAE1 /* icon_progress@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_progress@3x.png"; sourceTree = "<group>"; };
+		E290516D24DD346800D7FAE1 /* icon_progress@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_progress@2x.png"; sourceTree = "<group>"; };
+		E290516E24DD346800D7FAE1 /* icon_big_play@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_big_play@3x.png"; sourceTree = "<group>"; };
+		E290517D24DD34BE00D7FAE1 /* QKCustomPortraitControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKCustomPortraitControlView.swift; sourceTree = "<group>"; };
+		E290517F24DD380800D7FAE1 /* QKSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKSliderView.swift; sourceTree = "<group>"; };
+		E290518124DD384C00D7FAE1 /* QKPlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKPlayerController.swift; sourceTree = "<group>"; };
+		E290518324DD408F00D7FAE1 /* QKCustomLandScapeControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKCustomLandScapeControlView.swift; sourceTree = "<group>"; };
+		E290518724DD4DAE00D7FAE1 /* QKPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKPlayer.swift; sourceTree = "<group>"; };
+		E290518924DD54B700D7FAE1 /* icon_full@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_full@2x.png"; sourceTree = "<group>"; };
+		E290518A24DD54B700D7FAE1 /* icon_full@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_full@3x.png"; sourceTree = "<group>"; };
+		E290518D24DE956200D7FAE1 /* QKPlayerControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKPlayerControlView.swift; sourceTree = "<group>"; };
+		E290518F24DE999400D7FAE1 /* QKLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKLoadingView.swift; sourceTree = "<group>"; };
+		E290519124DE99A100D7FAE1 /* QKSpeedLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKSpeedLoadingView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E290512224DBAA6100D7FAE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2294BA758CED098E72367421 /* Pods_QKPlayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E290513824DBAA6300D7FAE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28E52124B7BA1C8674D17976 /* Pods_QKPlayer_QKPlayerUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A742215B2CA8EC121C15A19 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				74BF7E6919AE597EFAD3E252 /* Pods-QKPlayer.debug.xcconfig */,
+				51BD93DFFE074428EA3E667F /* Pods-QKPlayer.release.xcconfig */,
+				9098ADFF359FCBDE1DD5DFE3 /* Pods-QKPlayer-QKPlayerUITests.debug.xcconfig */,
+				53FF814A7A1B57C12799597C /* Pods-QKPlayer-QKPlayerUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2E2157B485E875F1FB6CC6D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B34EFDD2728AAFEBEF69F37 /* Pods_QKPlayer.framework */,
+				4FAC90BFE38A02B826FA9B6A /* Pods_QKPlayer_QKPlayerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E266B77824EBB14A00C2430D /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				E266B77924EBB15E00C2430D /* QKListCollectionViewCell.swift */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		E290511C24DBAA6100D7FAE1 = {
+			isa = PBXGroup;
+			children = (
+				E290512724DBAA6100D7FAE1 /* QKPlayer */,
+				E290513E24DBAA6300D7FAE1 /* QKPlayerUITests */,
+				E290512624DBAA6100D7FAE1 /* Products */,
+				2A742215B2CA8EC121C15A19 /* Pods */,
+				2E2157B485E875F1FB6CC6D1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E290512624DBAA6100D7FAE1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E290512524DBAA6100D7FAE1 /* QKPlayer.app */,
+				E290513B24DBAA6300D7FAE1 /* QKPlayerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E290512724DBAA6100D7FAE1 /* QKPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				E290515D24DD324600D7FAE1 /* Resources */,
+				E290515224DBADDD00D7FAE1 /* ControllView */,
+				E290515124DBADD900D7FAE1 /* Controller */,
+				E290514A24DBAC1600D7FAE1 /* AVPlayer */,
+				E290512824DBAA6100D7FAE1 /* AppDelegate.swift */,
+				E266B77824EBB14A00C2430D /* cell */,
+				E290512C24DBAA6100D7FAE1 /* ViewController.swift */,
+				E266B77424EB725300C2430D /* QKCollectionViewController.swift */,
+				E266B77624EB725E00C2430D /* QKNormalViewController.swift */,
+				1611B0D024ED12D600E38195 /* QKViewController.swift */,
+				E290512E24DBAA6100D7FAE1 /* Main.storyboard */,
+				E290513124DBAA6300D7FAE1 /* Assets.xcassets */,
+				E290513324DBAA6300D7FAE1 /* LaunchScreen.storyboard */,
+				E290513624DBAA6300D7FAE1 /* Info.plist */,
+			);
+			path = QKPlayer;
+			sourceTree = "<group>";
+		};
+		E290513E24DBAA6300D7FAE1 /* QKPlayerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E290513F24DBAA6300D7FAE1 /* QKPlayerUITests.swift */,
+				E290514124DBAA6300D7FAE1 /* Info.plist */,
+			);
+			path = QKPlayerUITests;
+			sourceTree = "<group>";
+		};
+		E290514A24DBAC1600D7FAE1 /* AVPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				E290514F24DBACF200D7FAE1 /* QKAVPlayerManager.swift */,
+			);
+			path = AVPlayer;
+			sourceTree = "<group>";
+		};
+		E290515124DBADD900D7FAE1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E290515924DBE97E00D7FAE1 /* QKObserverControl.swift */,
+				E287772924E249DF0012CF2E /* QKOrientationObserver.swift */,
+				E290518724DD4DAE00D7FAE1 /* QKPlayer.swift */,
+				E290518124DD384C00D7FAE1 /* QKPlayerController.swift */,
+				E287773124E6671D0012CF2E /* QKPlayerController+OrientationRotation.swift */,
+				E266B77224EA85F500C2430D /* QKPlayerController+ScrollView.swift */,
+				E287772D24E385400012CF2E /* QKPlayerGestureControl.swift */,
+				E287772524E0E0C20012CF2E /* QKPlayerMediaControl.swift */,
+				E290515324DBAE1B00D7FAE1 /* QKPlayerMediaPlayback.swift */,
+				E290515724DBD32D00D7FAE1 /* QKPlayerPresentView.swift */,
+				E290515524DBAF9B00D7FAE1 /* QKPlayerView.swift */,
+				E290515B24DD2A0200D7FAE1 /* QKReachabilityManager.swift */,
+				E287772324E0DA7C0012CF2E /* UIScrollView+QKPlayer.swift */,
+				E266B77B24EE521000C2430D /* QKPlayerNotification.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E290515224DBADDD00D7FAE1 /* ControllView */ = {
+			isa = PBXGroup;
+			children = (
+				E290518324DD408F00D7FAE1 /* QKCustomLandScapeControlView.swift */,
+				E290517D24DD34BE00D7FAE1 /* QKCustomPortraitControlView.swift */,
+				E266B77D24EE63A600C2430D /* QKListPlayerController.swift */,
+				E266B77F24EE63C700C2430D /* QKListPortraitControllerView.swift */,
+				E290518F24DE999400D7FAE1 /* QKLoadingView.swift */,
+				E290518D24DE956200D7FAE1 /* QKPlayerControlView.swift */,
+				E290517F24DD380800D7FAE1 /* QKSliderView.swift */,
+				E290519124DE99A100D7FAE1 /* QKSpeedLoadingView.swift */,
+				E287772724E121490012CF2E /* QKUtils.swift */,
+				E287772F24E51C4A0012CF2E /* QKVolumeBrightnessView.swift */,
+			);
+			path = ControllView;
+			sourceTree = "<group>";
+		};
+		E290515D24DD324600D7FAE1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E290516024DD346800D7FAE1 /* images */,
+				E290515E24DD328200D7FAE1 /* QKPlayer.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E290516024DD346800D7FAE1 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				E290516824DD346800D7FAE1 /* icon_ad@2x.png */,
+				E290516924DD346800D7FAE1 /* icon_ad@3x.png */,
+				E290516224DD346800D7FAE1 /* icon_adun@2x.png */,
+				E290516324DD346800D7FAE1 /* icon_adun@3x.png */,
+				E290516B24DD346800D7FAE1 /* icon_big_play@2x.png */,
+				E290516E24DD346800D7FAE1 /* icon_big_play@3x.png */,
+				E290518924DD54B700D7FAE1 /* icon_full@2x.png */,
+				E290518A24DD54B700D7FAE1 /* icon_full@3x.png */,
+				E290516124DD346800D7FAE1 /* icon_pause@2x.png */,
+				E290516424DD346800D7FAE1 /* icon_pause@3x.png */,
+				E290516D24DD346800D7FAE1 /* icon_progress@2x.png */,
+				E290516C24DD346800D7FAE1 /* icon_progress@3x.png */,
+				E290516524DD346800D7FAE1 /* icon_small_play@2x.png */,
+				E290516624DD346800D7FAE1 /* icon_small_play@3x.png */,
+				E290516724DD346800D7FAE1 /* icon_sq@2x.png */,
+				E290516A24DD346800D7FAE1 /* icon_sq@3x.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E290512424DBAA6100D7FAE1 /* QKPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E290514424DBAA6300D7FAE1 /* Build configuration list for PBXNativeTarget "QKPlayer" */;
+			buildPhases = (
+				9427E30120C9DA81146427C8 /* [CP] Check Pods Manifest.lock */,
+				E290512124DBAA6100D7FAE1 /* Sources */,
+				E290512224DBAA6100D7FAE1 /* Frameworks */,
+				E290512324DBAA6100D7FAE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QKPlayer;
+			productName = QKPlayer;
+			productReference = E290512524DBAA6100D7FAE1 /* QKPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E290513A24DBAA6300D7FAE1 /* QKPlayerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E290514724DBAA6300D7FAE1 /* Build configuration list for PBXNativeTarget "QKPlayerUITests" */;
+			buildPhases = (
+				BBADD364234C674F5A1AB442 /* [CP] Check Pods Manifest.lock */,
+				E290513724DBAA6300D7FAE1 /* Sources */,
+				E290513824DBAA6300D7FAE1 /* Frameworks */,
+				E290513924DBAA6300D7FAE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E290513D24DBAA6300D7FAE1 /* PBXTargetDependency */,
+			);
+			name = QKPlayerUITests;
+			productName = QKPlayerUITests;
+			productReference = E290513B24DBAA6300D7FAE1 /* QKPlayerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E290511D24DBAA6100D7FAE1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = cyw;
+				TargetAttributes = {
+					E290512424DBAA6100D7FAE1 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					E290513A24DBAA6300D7FAE1 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = E290512424DBAA6100D7FAE1;
+					};
+				};
+			};
+			buildConfigurationList = E290512024DBAA6100D7FAE1 /* Build configuration list for PBXProject "QKPlayer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E290511C24DBAA6100D7FAE1;
+			productRefGroup = E290512624DBAA6100D7FAE1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E290512424DBAA6100D7FAE1 /* QKPlayer */,
+				E290513A24DBAA6300D7FAE1 /* QKPlayerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E290512324DBAA6100D7FAE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E290517424DD346800D7FAE1 /* icon_small_play@3x.png in Resources */,
+				E290518C24DD54B700D7FAE1 /* icon_full@3x.png in Resources */,
+				E290517124DD346800D7FAE1 /* icon_adun@3x.png in Resources */,
+				E290515F24DD328200D7FAE1 /* QKPlayer.bundle in Resources */,
+				E290513524DBAA6300D7FAE1 /* LaunchScreen.storyboard in Resources */,
+				E290513224DBAA6300D7FAE1 /* Assets.xcassets in Resources */,
+				E290516F24DD346800D7FAE1 /* icon_pause@2x.png in Resources */,
+				E290517524DD346800D7FAE1 /* icon_sq@2x.png in Resources */,
+				E290517C24DD346800D7FAE1 /* icon_big_play@3x.png in Resources */,
+				E290517324DD346800D7FAE1 /* icon_small_play@2x.png in Resources */,
+				E290517624DD346800D7FAE1 /* icon_ad@2x.png in Resources */,
+				E290518B24DD54B700D7FAE1 /* icon_full@2x.png in Resources */,
+				E290517224DD346800D7FAE1 /* icon_pause@3x.png in Resources */,
+				E290513024DBAA6100D7FAE1 /* Main.storyboard in Resources */,
+				E290517724DD346800D7FAE1 /* icon_ad@3x.png in Resources */,
+				E290517824DD346800D7FAE1 /* icon_sq@3x.png in Resources */,
+				E290517B24DD346800D7FAE1 /* icon_progress@2x.png in Resources */,
+				E290517924DD346800D7FAE1 /* icon_big_play@2x.png in Resources */,
+				E290517024DD346800D7FAE1 /* icon_adun@2x.png in Resources */,
+				E290517A24DD346800D7FAE1 /* icon_progress@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E290513924DBAA6300D7FAE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9427E30120C9DA81146427C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QKPlayer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBADD364234C674F5A1AB442 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QKPlayer-QKPlayerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E290512124DBAA6100D7FAE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E290512D24DBAA6100D7FAE1 /* ViewController.swift in Sources */,
+				E290515A24DBE97E00D7FAE1 /* QKObserverControl.swift in Sources */,
+				E266B77C24EE521000C2430D /* QKPlayerNotification.swift in Sources */,
+				E287772A24E249DF0012CF2E /* QKOrientationObserver.swift in Sources */,
+				E266B77E24EE63A600C2430D /* QKListPlayerController.swift in Sources */,
+				E287773224E6671D0012CF2E /* QKPlayerController+OrientationRotation.swift in Sources */,
+				E287773024E51C4A0012CF2E /* QKVolumeBrightnessView.swift in Sources */,
+				E290515624DBAF9B00D7FAE1 /* QKPlayerView.swift in Sources */,
+				E290519024DE999400D7FAE1 /* QKLoadingView.swift in Sources */,
+				E266B77724EB725E00C2430D /* QKNormalViewController.swift in Sources */,
+				E290518E24DE956200D7FAE1 /* QKPlayerControlView.swift in Sources */,
+				E266B77524EB725300C2430D /* QKCollectionViewController.swift in Sources */,
+				E266B77324EA85F600C2430D /* QKPlayerController+ScrollView.swift in Sources */,
+				E287772424E0DA7C0012CF2E /* UIScrollView+QKPlayer.swift in Sources */,
+				E290512924DBAA6100D7FAE1 /* AppDelegate.swift in Sources */,
+				E290515824DBD32D00D7FAE1 /* QKPlayerPresentView.swift in Sources */,
+				E290517E24DD34BE00D7FAE1 /* QKCustomPortraitControlView.swift in Sources */,
+				E290518824DD4DAE00D7FAE1 /* QKPlayer.swift in Sources */,
+				1611B0D124ED12D600E38195 /* QKViewController.swift in Sources */,
+				E290519224DE99A100D7FAE1 /* QKSpeedLoadingView.swift in Sources */,
+				E290515424DBAE1B00D7FAE1 /* QKPlayerMediaPlayback.swift in Sources */,
+				E290518424DD408F00D7FAE1 /* QKCustomLandScapeControlView.swift in Sources */,
+				E266B78024EE63C700C2430D /* QKListPortraitControllerView.swift in Sources */,
+				E287772E24E385400012CF2E /* QKPlayerGestureControl.swift in Sources */,
+				E290515C24DD2A0200D7FAE1 /* QKReachabilityManager.swift in Sources */,
+				E290515024DBACF200D7FAE1 /* QKAVPlayerManager.swift in Sources */,
+				E290518224DD384C00D7FAE1 /* QKPlayerController.swift in Sources */,
+				E290518024DD380800D7FAE1 /* QKSliderView.swift in Sources */,
+				E287772824E121490012CF2E /* QKUtils.swift in Sources */,
+				E266B77A24EBB15E00C2430D /* QKListCollectionViewCell.swift in Sources */,
+				E287772624E0E0C20012CF2E /* QKPlayerMediaControl.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E290513724DBAA6300D7FAE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E290514024DBAA6300D7FAE1 /* QKPlayerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E290513D24DBAA6300D7FAE1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E290512424DBAA6100D7FAE1 /* QKPlayer */;
+			targetProxy = E290513C24DBAA6300D7FAE1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E290512E24DBAA6100D7FAE1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E290512F24DBAA6100D7FAE1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E290513324DBAA6300D7FAE1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E290513424DBAA6300D7FAE1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E290514224DBAA6300D7FAE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E290514324DBAA6300D7FAE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E290514524DBAA6300D7FAE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74BF7E6919AE597EFAD3E252 /* Pods-QKPlayer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K9K9TWXGFW;
+				INFOPLIST_FILE = QKPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cyw.QKPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E290514624DBAA6300D7FAE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51BD93DFFE074428EA3E667F /* Pods-QKPlayer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K9K9TWXGFW;
+				INFOPLIST_FILE = QKPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cyw.QKPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E290514824DBAA6300D7FAE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9098ADFF359FCBDE1DD5DFE3 /* Pods-QKPlayer-QKPlayerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = QKPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cyw.QKPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QKPlayer;
+			};
+			name = Debug;
+		};
+		E290514924DBAA6300D7FAE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53FF814A7A1B57C12799597C /* Pods-QKPlayer-QKPlayerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = QKPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cyw.QKPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QKPlayer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E290512024DBAA6100D7FAE1 /* Build configuration list for PBXProject "QKPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E290514224DBAA6300D7FAE1 /* Debug */,
+				E290514324DBAA6300D7FAE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E290514424DBAA6300D7FAE1 /* Build configuration list for PBXNativeTarget "QKPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E290514524DBAA6300D7FAE1 /* Debug */,
+				E290514624DBAA6300D7FAE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E290514724DBAA6300D7FAE1 /* Build configuration list for PBXNativeTarget "QKPlayerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E290514824DBAA6300D7FAE1 /* Debug */,
+				E290514924DBAA6300D7FAE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E290511D24DBAA6100D7FAE1 /* Project object */;
+}
